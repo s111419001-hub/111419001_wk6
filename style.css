@@ -1,129 +1,361 @@
-// Copyrights 2017 Vegetables cise / Design by Vegetables
-color: #EDF2C5;
- font-size: 12px;
- font-family: Noto Sans;
- font-weight: 400;
- line-height: 18px;
- word-wrap: break-word
----
-// Vegetables
-color: #EDF2C5;
- font-size: 16px;
- font-family: Noto Sans;
- font-weight: 900;
- line-height: 24px;
- word-wrap: break-word
----
-// Carrots are crunchy, sweet root vegetables packed with beta-carotene, fiber, and Vitamin A. Best known for supporting eye health and immunity, they come in bright orange, purple, and yellow varieties. Versatile and low in calories, they are delicious consumed raw as a crisp snack or cooked in soups, roasts, and salads.
-color: #7D7D7D;
- font-size: 11px;
- font-family: Inter;
- font-weight: 400;
- word-wrap: break-word
----
-// Bell peppers (sweet peppers) are vibrant, crunchy vegetables packed with Vitamin C, dietary fiber, and antioxidants. Available in bright red, yellow, orange, and green, they boost immunity and promote skin health. Low in calories, they are delicious eaten raw in salads, stir-fried, or roasted.
-color: #7D7D7D;
- font-size: 11px;
- font-family: Inter;
- font-weight: 400;
- word-wrap: break-word
----
-// Corn (maize) is a sweet and versatile cereal grain rich in carbohydrates, dietary fiber, and essential B vitamins. Packed with eye-healthy antioxidants like lutein, it provides a steady source of energy. Enjoyed worldwide, corn can be eaten fresh on the cob, popped into popcorn, roasted, or cooked into soups and salads.
-color: #7D7D7D;
- font-size: 11px;
- font-family: Inter;
- font-weight: 400;
- word-wrap: break-word
----
-// Contact
-color: #EDF2C5;
- font-size: 16px;
- font-family: Noto Sans;
- font-weight: 900;
- line-height: 24px;
- word-wrap: break-word
----
-// For any questions or suggestions about Vegetables, Vegetables Club or your online order you can contact Vegetables Customer Service by phone, email or post and we’ll be happy to help.
-color: #7D7D7D;
- font-size: 12px;
- font-family: Noto Sans;
- font-weight: 400;
- line-height: 18px;
- word-wrap: break-word
----
-// Vegetables are essential, nutrient-dense foods that form the foundation of a healthy diet. Packed with vital vitamins, minerals, dietary fiber, and antioxidants, they strengthen the immune system, improve digestion, and support long-term cardiovascular health. Available in a vibrant array of colors and types—from leafy greens to root crops—each variety provides unique protective nutrients.<br/><br/>Incredibly versatile in the kitchen, vegetables adapt seamlessly to diverse culinary traditions around the world. They can be eaten raw in crisp salads, lightly steamed, stir-fried, roasted, or blended into hearty soups and smoothies. Incorporating a colorful mix of vegetables into daily meals is one of the simplest and most effective ways to maintain overall vitality.
-color: #7D7D7D;
- font-size: 12px;
- font-family: Noto Sans;
- font-weight: 400;
- line-height: 18px;
- word-wrap: break-word
----
-// E-mail : Vegetables@aaabbccc.com <br/>PHONE : +886-123-456-789
-color: #7D7D7D;
- font-size: 12px;
- font-family: Noto Sans;
- font-weight: 400;
- line-height: 18px;
- word-wrap: break-word
----
-// Home
-color: #EDF2C5;
- font-size: 16px;
- font-family: Noto Sans;
- font-weight: 900;
- line-height: 24px;
- word-wrap: break-word
----
-// About Us
-color: #EDF2C5;
- font-size: 16px;
- font-family: Noto Sans;
- font-weight: 900;
- line-height: 24px;
- word-wrap: break-word
----
-// Vegetables
-color: #EDF2C5;
- font-size: 16px;
- font-family: Noto Sans;
- font-weight: 900;
- line-height: 24px;
- word-wrap: break-word
----
-// Online
-color: #EDF2C5;
- font-size: 16px;
- font-family: Noto Sans;
- font-weight: 900;
- line-height: 24px;
- word-wrap: break-word
----
-// Contact
-color: #EDF2C5;
- font-size: 16px;
- font-family: Noto Sans;
- font-weight: 900;
- line-height: 24px;
- word-wrap: break-word
----
-// Vegetables
-color: #778A50;
- font-size: 44px;
- font-family: Noto Sans;
- font-weight: 900;
- word-wrap: break-word
----
-// LOGIN
-color: #778A50;
- font-size: 14px;
- font-family: Noto Sans;
- font-weight: 700;
- word-wrap: break-word
----
-// JOIN
-color: #778A50;
- font-size: 14px;
- font-family: Noto Sans;
- font-weight: 700;
- word-wrap: break-word
+.vegetable-layout {
+  	width: 100%;
+  	height: 1171px;
+  	position: relative;
+  	background-color: #edf2c5;
+  	overflow: hidden;
+  	text-align: left;
+  	font-size: 12px;
+  	color: #edf2c5;
+  	font-family: 'Noto Sans';
+}
+.footer {
+  	position: absolute;
+  	width: 100%;
+  	right: 0px;
+  	bottom: 0px;
+  	left: 0px;
+  	border-radius: 3px;
+  	background-color: #778a50;
+  	height: 60px;
+  	overflow: hidden;
+  	flex-shrink: 0;
+}
+.copyrights-2017-vegetables {
+  	position: absolute;
+  	top: calc(50% - 9px);
+  	left: calc(50% - 151px);
+  	line-height: 150%;
+}
+.body {
+  	position: absolute;
+  	top: 166px;
+  	left: 160px;
+  	width: 1120px;
+  	height: 1019px;
+  	flex-shrink: 0;
+  	font-size: 11px;
+  	color: #7d7d7d;
+  	font-family: Inter;
+}
+.box-vegetables {
+  	position: absolute;
+  	top: 480px;
+  	left: 0px;
+  	width: 528px;
+  	height: 201px;
+}
+.box-vegetables-title {
+  	position: absolute;
+  	width: 100%;
+  	top: 0px;
+  	right: 0px;
+  	left: 0px;
+  	border-radius: 3px;
+  	background-color: #778a50;
+  	height: 45px;
+  	overflow: hidden;
+  	flex-shrink: 0;
+  	font-size: 16px;
+  	color: #edf2c5;
+  	font-family: 'Noto Sans';
+}
+.vegetables {
+  	position: absolute;
+  	top: 10px;
+  	left: 30px;
+  	line-height: 150%;
+  	font-weight: 900;
+}
+.img-other-group {
+  	position: absolute;
+  	top: 61px;
+  	left: 0px;
+  	width: 528px;
+  	height: 140px;
+  	flex-shrink: 0;
+}
+.carrots-icon {
+  	position: absolute;
+  	width: calc(100% - 363px);
+  	top: 0px;
+  	right: 363px;
+  	left: 0px;
+  	max-width: 100%;
+  	overflow: hidden;
+  	height: 140px;
+  	object-fit: cover;
+}
+.corn-icon {
+  	position: absolute;
+  	width: calc(100% - 362px);
+  	top: 0px;
+  	right: 181px;
+  	left: 181px;
+  	max-width: 100%;
+  	overflow: hidden;
+  	height: 140px;
+  	object-fit: cover;
+}
+.peppers-icon {
+  	position: absolute;
+  	width: calc(100% - 363px);
+  	top: 0px;
+  	right: 0px;
+  	left: 363px;
+  	max-width: 100%;
+  	overflow: hidden;
+  	height: 140px;
+  	object-fit: cover;
+}
+.box-vegetables-child {
+  	position: absolute;
+  	top: 201px;
+  	left: 1px;
+  	background-color: #f7fbda;
+  	width: 164px;
+  	height: 211px;
+  	flex-shrink: 0;
+}
+.carrots-are-crunchy {
+  	position: absolute;
+  	top: 215px;
+  	left: 12px;
+  	display: inline-block;
+  	width: 141px;
+  	flex-shrink: 0;
+}
+.box-vegetables-item {
+  	position: absolute;
+  	top: 201px;
+  	left: 364px;
+  	background-color: #f7fbda;
+  	width: 164px;
+  	height: 211px;
+  	flex-shrink: 0;
+}
+.bell-peppers-sweet {
+  	position: absolute;
+  	top: 215px;
+  	left: 375px;
+  	display: inline-block;
+  	width: 141px;
+  	flex-shrink: 0;
+}
+.box-vegetables-inner {
+  	position: absolute;
+  	top: 201px;
+  	left: 182px;
+  	background-color: #f7fbda;
+  	width: 164px;
+  	height: 211px;
+  	flex-shrink: 0;
+}
+.corn-maize-is {
+  	position: absolute;
+  	top: 215px;
+  	left: 193px;
+  	display: inline-block;
+  	width: 141px;
+  	flex-shrink: 0;
+}
+.box-contact {
+  	position: absolute;
+  	top: 480px;
+  	left: 592px;
+  	width: 528px;
+  	height: 416px;
+  	font-size: 16px;
+  	color: #edf2c5;
+  	font-family: 'Noto Sans';
+}
+.box-contact-title {
+  	position: absolute;
+  	width: 100%;
+  	top: 0px;
+  	right: 0px;
+  	left: 0px;
+  	border-radius: 3px;
+  	background-color: #778a50;
+  	height: 45px;
+  	overflow: hidden;
+}
+.box-contact-text {
+  	position: absolute;
+  	width: 100%;
+  	top: 45px;
+  	right: 0px;
+  	left: 0px;
+  	background-color: #f7fbda;
+  	height: 367px;
+  	font-size: 12px;
+  	color: #7d7d7d;
+}
+.for-any-questions {
+  	position: absolute;
+  	top: 241px;
+  	left: 16px;
+  	line-height: 150%;
+  	display: flex;
+  	align-items: center;
+  	width: 496px;
+}
+.vegetables-are-essential {
+  	position: absolute;
+  	top: 17px;
+  	left: 16px;
+  	line-height: 150%;
+  	display: flex;
+  	align-items: center;
+  	width: 496px;
+}
+.box-contact-text-child {
+  	position: absolute;
+  	top: 303.5px;
+  	left: 15.5px;
+  	border-top: 1px solid #7d7d7d;
+  	box-sizing: border-box;
+  	width: 497px;
+  	height: 1px;
+}
+.e-mail-vegetablesaaabbcccc {
+  	position: absolute;
+  	top: 313px;
+  	left: 16px;
+  	line-height: 150%;
+  	display: flex;
+  	align-items: center;
+  	width: 496px;
+  	height: 36px;
+}
+.box-main-content-icon {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	width: 1120px;
+  	height: 448px;
+  	object-fit: cover;
+}
+.nav {
+  	position: absolute;
+  	width: calc(100% - 320px);
+  	top: 106px;
+  	right: 160px;
+  	left: 160px;
+  	border-radius: 3px;
+  	background-color: #778a50;
+  	height: 44px;
+  	overflow: hidden;
+  	flex-shrink: 0;
+  	font-size: 16px;
+}
+.about-us {
+  	position: absolute;
+  	top: 10px;
+  	left: 141px;
+  	line-height: 150%;
+  	font-weight: 900;
+}
+.vegetables2 {
+  	position: absolute;
+  	top: 10px;
+  	left: 282px;
+  	line-height: 150%;
+  	font-weight: 900;
+}
+.online {
+  	position: absolute;
+  	top: 10px;
+  	left: 441px;
+  	line-height: 150%;
+  	font-weight: 900;
+}
+.contact2 {
+  	position: absolute;
+  	top: 10px;
+  	left: 557px;
+  	line-height: 150%;
+  	font-weight: 900;
+}
+.header {
+  	position: absolute;
+  	top: 36px;
+  	left: 160px;
+  	width: 1122px;
+  	height: 62px;
+  	flex-shrink: 0;
+  	font-size: 44px;
+  	color: #778a50;
+}
+.vegetables3 {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	font-weight: 900;
+}
+.btn-group {
+  	position: absolute;
+  	top: 19px;
+  	left: 914px;
+  	width: 208px;
+  	height: 24px;
+  	font-size: 14px;
+}
+.facebook-icon {
+  	position: absolute;
+  	top: 0px;
+  	right: 184px;
+  	width: 24px;
+  	height: 24px;
+  	object-fit: cover;
+  	flex-shrink: 0;
+}
+.instagram-icon {
+  	position: absolute;
+  	top: 0px;
+  	right: 148px;
+  	width: 24px;
+  	height: 24px;
+  	object-fit: cover;
+  	flex-shrink: 0;
+}
+.btn-login-box {
+  	position: absolute;
+  	top: 0px;
+  	right: 63px;
+  	border-radius: 3px;
+  	border: 1px solid #778a50;
+  	overflow: hidden;
+  	display: flex;
+  	align-items: flex-start;
+  	padding: 4px 8px;
+  	flex-shrink: 0;
+}
+.login {
+  	position: relative;
+}
+.btn-join-box {
+  	position: absolute;
+  	top: 0px;
+  	right: 0px;
+  	border-radius: 3px;
+  	border: 1px solid #778a50;
+  	box-sizing: border-box;
+  	width: 49px;
+  	overflow: hidden;
+  	display: flex;
+  	align-items: flex-start;
+  	padding: 4px 8px;
+  	flex-shrink: 0;
+}
+.line {
+  	position: absolute;
+  	top: -0.5px;
+  	right: 135.5px;
+  	border-right: 1px solid #778a50;
+  	box-sizing: border-box;
+  	width: 1px;
+  	height: 25px;
+  	flex-shrink: 0;
+}
+
