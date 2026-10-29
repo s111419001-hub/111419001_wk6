@@ -1,529 +1,129 @@
-:root {
-    --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-        Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
-        "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
-        "Source Han Sans CN", sans-serif;
-}
-
-.main-container {
-    overflow: hidden;
-}
-
-.main-container,
-.main-container * {
-    box-sizing: border-box;
-}
-
-input,
-select,
-textarea,
-button {
-    outline: 0;
-}
-
-.main-container {
-    position: relative;
-    width: 1440px;
-    height: 1171px;
-    margin: 0 auto;
-    background: #edf2c5;
-    overflow: hidden;
-}
-.group {
-    position: relative;
-    width: 1122px;
-    height: 60px;
-    margin: 36px 0 0 160px;
-    z-index: 41;
-}
-.text {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    position: absolute;
-    height: 60px;
-    top: 0;
-    left: 0;
-    color: #778a50;
-    font-family: Noto Sans, var(--default-font-family);
-    font-size: 44px;
-    font-weight: 900;
-    line-height: 59.928px;
-    text-align: left;
-    white-space: nowrap;
-    z-index: 33;
-}
-.pic {
-    position: absolute;
-    width: 24px;
-    height: 24px;
-    top: 19px;
-    right: 184px;
-    background: url(./assets/images/ef2befe44f345742d886cdcadd4936a9603470d5.png)
-        no-repeat center;
-    background-size: cover;
-    z-index: 35;
-}
-.img {
-    position: absolute;
-    width: 24px;
-    height: 24px;
-    top: 19px;
-    right: 148px;
-    background: url(./assets/images/c3394cafc2268043fcf5c8b28dd7553045849607.png)
-        no-repeat center;
-    background-size: cover;
-    z-index: 36;
-}
-.pic-2 {
-    position: absolute;
-    width: 1px;
-    height: 24px;
-    top: 19px;
-    right: 135px;
-    background: url(./assets/images/34e800d4-2edb-4036-8fc1-1b295dfa9901.svg)
-        no-repeat center;
-    background-size: cover;
-    z-index: 41;
-}
-.box {
-    display: flex;
-    align-items: flex-start;
-    flex-wrap: nowrap;
-    position: absolute;
-    width: 62px;
-    height: 27px;
-    top: 19px;
-    right: 63px;
-    padding: 4px 8px 4px 8px;
-    border: 1px solid #778a50;
-    z-index: 37;
-    overflow: hidden;
-    border-radius: 3px;
-}
-.text-2 {
-    flex-shrink: 0;
-    flex-basis: auto;
-    position: relative;
-    height: 19px;
-    color: #778a50;
-    font-family: Noto Sans, var(--default-font-family);
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 19px;
-    text-align: left;
-    white-space: nowrap;
-    z-index: 38;
-}
-.section {
-    display: flex;
-    align-items: flex-start;
-    flex-wrap: nowrap;
-    position: absolute;
-    width: 49px;
-    height: 27px;
-    top: 19px;
-    right: 0;
-    padding: 4px 8px 4px 8px;
-    border: 1px solid #778a50;
-    z-index: 39;
-    overflow: hidden;
-    border-radius: 3px;
-}
-.text-3 {
-    flex-shrink: 0;
-    flex-basis: auto;
-    position: relative;
-    height: 19px;
-    color: #778a50;
-    font-family: Noto Sans, var(--default-font-family);
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 19px;
-    text-align: left;
-    white-space: nowrap;
-    z-index: 40;
-}
-.wrapper {
-    position: relative;
-    width: 1120px;
-    height: 44px;
-    margin: 10px 0 0 160px;
-    background: #778a50;
-    z-index: 26;
-    overflow: hidden;
-    border-radius: 3px;
-}
-.text-4 {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    position: absolute;
-    height: 24px;
-    top: 10px;
-    left: 30px;
-    color: #edf2c5;
-    font-family: Noto Sans, var(--default-font-family);
-    font-size: 16px;
-    font-weight: 900;
-    line-height: 24px;
-    text-align: left;
-    white-space: nowrap;
-    z-index: 27;
-}
-.text-5 {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    position: absolute;
-    height: 24px;
-    top: 10px;
-    left: 141px;
-    color: #edf2c5;
-    font-family: Noto Sans, var(--default-font-family);
-    font-size: 16px;
-    font-weight: 900;
-    line-height: 24px;
-    text-align: left;
-    white-space: nowrap;
-    z-index: 28;
-}
-.text-6 {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    position: absolute;
-    height: 24px;
-    top: 10px;
-    left: 282px;
-    color: #edf2c5;
-    font-family: Noto Sans, var(--default-font-family);
-    font-size: 16px;
-    font-weight: 900;
-    line-height: 24px;
-    text-align: left;
-    white-space: nowrap;
-    z-index: 29;
-}
-.text-7 {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    position: absolute;
-    height: 24px;
-    top: 10px;
-    left: 441px;
-    color: #edf2c5;
-    font-family: Noto Sans, var(--default-font-family);
-    font-size: 16px;
-    font-weight: 900;
-    line-height: 24px;
-    text-align: left;
-    white-space: nowrap;
-    z-index: 30;
-}
-.text-8 {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    position: absolute;
-    height: 24px;
-    top: 10px;
-    left: 557px;
-    color: #edf2c5;
-    font-family: Noto Sans, var(--default-font-family);
-    font-size: 16px;
-    font-weight: 900;
-    line-height: 24px;
-    text-align: left;
-    white-space: nowrap;
-    z-index: 31;
-}
-.img-2 {
-    position: relative;
-    width: 1120px;
-    height: 448px;
-    margin: 16px 0 0 160px;
-    background: url(./assets/images/60683df1af1b70b1d843af9c3c19c259303199b7.png)
-        no-repeat center;
-    background-size: cover;
-    z-index: 25;
-}
-.wrapper-2 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-    width: 1120px;
-    height: 45px;
-    margin: 32px 0 0 160px;
-    z-index: 17;
-}
-.box-2 {
-    flex-shrink: 0;
-    position: relative;
-    width: 528px;
-    height: 45px;
-    background: #778a50;
-    z-index: 4;
-    overflow: hidden;
-    border-radius: 3px;
-}
-.text-9 {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    position: absolute;
-    height: 24px;
-    top: 10px;
-    left: 30px;
-    color: #edf2c5;
-    font-family: Noto Sans, var(--default-font-family);
-    font-size: 16px;
-    font-weight: 900;
-    line-height: 24px;
-    text-align: left;
-    white-space: nowrap;
-    z-index: 5;
-}
-.group-2 {
-    flex-shrink: 0;
-    position: relative;
-    width: 528px;
-    height: 45px;
-    background: #778a50;
-    z-index: 17;
-    overflow: hidden;
-    border-radius: 3px;
-}
-.text-a {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    position: absolute;
-    height: 24px;
-    top: 10px;
-    left: 30px;
-    color: #edf2c5;
-    font-family: Noto Sans, var(--default-font-family);
-    font-size: 16px;
-    font-weight: 900;
-    line-height: 24px;
-    text-align: left;
-    white-space: nowrap;
-    z-index: 18;
-}
-.group-3 {
-    position: relative;
-    width: 1120px;
-    height: 367px;
-    margin: 0 0 0 160px;
-    z-index: 19;
-}
-.box-3 {
-    position: absolute;
-    height: 367px;
-    top: 0;
-    right: 0;
-    left: 592px;
-    font-size: 0px;
-    background: #f7fbda;
-    z-index: 19;
-}
-.text-b {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    position: relative;
-    width: 496px;
-    height: 198px;
-    margin: 17px 0 0 16px;
-    color: #7d7d7d;
-    font-family: Noto Sans, var(--default-font-family);
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 18px;
-    text-align: left;
-    z-index: 21;
-}
-.text-c {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    position: relative;
-    width: 496px;
-    height: 54px;
-    margin: 26px 0 0 16px;
-    color: #7d7d7d;
-    font-family: Noto Sans, var(--default-font-family);
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 18px;
-    text-align: left;
-    z-index: 20;
-}
-.img-3 {
-    position: relative;
-    width: 496px;
-    height: 1px;
-    margin: 8px 0 0 16px;
-    background: url(./assets/images/9636ea52-07d3-4f17-8acb-8159e37625d3.svg)
-        no-repeat center;
-    background-size: cover;
-    z-index: 22;
-}
-.text-d {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    position: relative;
-    width: 496px;
-    height: 36px;
-    margin: 9px 0 0 16px;
-    color: #7d7d7d;
-    font-family: Noto Sans, var(--default-font-family);
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 18px;
-    text-align: left;
-    text-overflow: initial;
-    z-index: 23;
-    overflow: hidden;
-}
-.pic-3 {
-    position: absolute;
-    height: 140px;
-    top: 16px;
-    right: 955px;
-    left: 0;
-    background: url(./assets/images/d04dac47e79470f27f2866ea93d3508a6f121840.png)
-        no-repeat center;
-    background-size: cover;
-    z-index: 7;
-}
-.img-4 {
-    position: absolute;
-    height: 140px;
-    top: 16px;
-    right: 773px;
-    left: 181px;
-    background: url(./assets/images/961e52556d3b8cbc54c58a7c0b5d59f6e2444de9.png)
-        no-repeat center;
-    background-size: cover;
-    z-index: 8;
-}
-.img-5 {
-    position: absolute;
-    height: 140px;
-    top: 16px;
-    right: 592px;
-    left: 363px;
-    background: url(./assets/images/feeba545a27097065a93670823088f9f4799a7e1.png)
-        no-repeat center;
-    background-size: cover;
-    z-index: 9;
-}
-.section-2 {
-    position: absolute;
-    width: 164px;
-    height: 211px;
-    top: 156px;
-    left: 1px;
-    background: #f7fbda;
-    z-index: 10;
-}
-.text-e {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    position: absolute;
-    width: 141px;
-    height: 169px;
-    top: 14px;
-    left: 11px;
-    color: #7d7d7d;
-    font-family: Inter, var(--default-font-family);
-    font-size: 11px;
-    font-weight: 400;
-    line-height: 13.313px;
-    text-align: left;
-    z-index: 11;
-}
-.section-3 {
-    position: absolute;
-    width: 164px;
-    height: 211px;
-    top: 156px;
-    left: 182px;
-    background: #f7fbda;
-    z-index: 14;
-}
-.text-f {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    position: absolute;
-    width: 141px;
-    height: 169px;
-    top: 14px;
-    left: 11px;
-    color: #7d7d7d;
-    font-family: Inter, var(--default-font-family);
-    font-size: 11px;
-    font-weight: 400;
-    line-height: 13.313px;
-    text-align: left;
-    z-index: 15;
-}
-.wrapper-3 {
-    position: absolute;
-    width: 164px;
-    height: 211px;
-    top: 156px;
-    left: 364px;
-    background: #f7fbda;
-    z-index: 12;
-}
-.text-10 {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    position: absolute;
-    width: 141px;
-    height: 169px;
-    top: 14px;
-    left: 11px;
-    color: #7d7d7d;
-    font-family: Inter, var(--default-font-family);
-    font-size: 11px;
-    font-weight: 400;
-    line-height: 13.313px;
-    text-align: left;
-    z-index: 13;
-}
-.section-4 {
-    position: relative;
-    width: 1440px;
-    height: 60px;
-    margin: 53px 0 0 0;
-    background: #778a50;
-    overflow: hidden;
-    border-radius: 3px;
-}
-.text-11 {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    position: absolute;
-    height: 18px;
-    top: calc(50% - 9px);
-    left: calc(50% - 151px);
-    color: #edf2c5;
-    font-family: Noto Sans, var(--default-font-family);
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 18px;
-    text-align: left;
-    white-space: nowrap;
-    z-index: 1;
-}
+// Copyrights 2017 Vegetables cise / Design by Vegetables
+color: #EDF2C5;
+ font-size: 12px;
+ font-family: Noto Sans;
+ font-weight: 400;
+ line-height: 18px;
+ word-wrap: break-word
+---
+// Vegetables
+color: #EDF2C5;
+ font-size: 16px;
+ font-family: Noto Sans;
+ font-weight: 900;
+ line-height: 24px;
+ word-wrap: break-word
+---
+// Carrots are crunchy, sweet root vegetables packed with beta-carotene, fiber, and Vitamin A. Best known for supporting eye health and immunity, they come in bright orange, purple, and yellow varieties. Versatile and low in calories, they are delicious consumed raw as a crisp snack or cooked in soups, roasts, and salads.
+color: #7D7D7D;
+ font-size: 11px;
+ font-family: Inter;
+ font-weight: 400;
+ word-wrap: break-word
+---
+// Bell peppers (sweet peppers) are vibrant, crunchy vegetables packed with Vitamin C, dietary fiber, and antioxidants. Available in bright red, yellow, orange, and green, they boost immunity and promote skin health. Low in calories, they are delicious eaten raw in salads, stir-fried, or roasted.
+color: #7D7D7D;
+ font-size: 11px;
+ font-family: Inter;
+ font-weight: 400;
+ word-wrap: break-word
+---
+// Corn (maize) is a sweet and versatile cereal grain rich in carbohydrates, dietary fiber, and essential B vitamins. Packed with eye-healthy antioxidants like lutein, it provides a steady source of energy. Enjoyed worldwide, corn can be eaten fresh on the cob, popped into popcorn, roasted, or cooked into soups and salads.
+color: #7D7D7D;
+ font-size: 11px;
+ font-family: Inter;
+ font-weight: 400;
+ word-wrap: break-word
+---
+// Contact
+color: #EDF2C5;
+ font-size: 16px;
+ font-family: Noto Sans;
+ font-weight: 900;
+ line-height: 24px;
+ word-wrap: break-word
+---
+// For any questions or suggestions about Vegetables, Vegetables Club or your online order you can contact Vegetables Customer Service by phone, email or post and we’ll be happy to help.
+color: #7D7D7D;
+ font-size: 12px;
+ font-family: Noto Sans;
+ font-weight: 400;
+ line-height: 18px;
+ word-wrap: break-word
+---
+// Vegetables are essential, nutrient-dense foods that form the foundation of a healthy diet. Packed with vital vitamins, minerals, dietary fiber, and antioxidants, they strengthen the immune system, improve digestion, and support long-term cardiovascular health. Available in a vibrant array of colors and types—from leafy greens to root crops—each variety provides unique protective nutrients.<br/><br/>Incredibly versatile in the kitchen, vegetables adapt seamlessly to diverse culinary traditions around the world. They can be eaten raw in crisp salads, lightly steamed, stir-fried, roasted, or blended into hearty soups and smoothies. Incorporating a colorful mix of vegetables into daily meals is one of the simplest and most effective ways to maintain overall vitality.
+color: #7D7D7D;
+ font-size: 12px;
+ font-family: Noto Sans;
+ font-weight: 400;
+ line-height: 18px;
+ word-wrap: break-word
+---
+// E-mail : Vegetables@aaabbccc.com <br/>PHONE : +886-123-456-789
+color: #7D7D7D;
+ font-size: 12px;
+ font-family: Noto Sans;
+ font-weight: 400;
+ line-height: 18px;
+ word-wrap: break-word
+---
+// Home
+color: #EDF2C5;
+ font-size: 16px;
+ font-family: Noto Sans;
+ font-weight: 900;
+ line-height: 24px;
+ word-wrap: break-word
+---
+// About Us
+color: #EDF2C5;
+ font-size: 16px;
+ font-family: Noto Sans;
+ font-weight: 900;
+ line-height: 24px;
+ word-wrap: break-word
+---
+// Vegetables
+color: #EDF2C5;
+ font-size: 16px;
+ font-family: Noto Sans;
+ font-weight: 900;
+ line-height: 24px;
+ word-wrap: break-word
+---
+// Online
+color: #EDF2C5;
+ font-size: 16px;
+ font-family: Noto Sans;
+ font-weight: 900;
+ line-height: 24px;
+ word-wrap: break-word
+---
+// Contact
+color: #EDF2C5;
+ font-size: 16px;
+ font-family: Noto Sans;
+ font-weight: 900;
+ line-height: 24px;
+ word-wrap: break-word
+---
+// Vegetables
+color: #778A50;
+ font-size: 44px;
+ font-family: Noto Sans;
+ font-weight: 900;
+ word-wrap: break-word
+---
+// LOGIN
+color: #778A50;
+ font-size: 14px;
+ font-family: Noto Sans;
+ font-weight: 700;
+ word-wrap: break-word
+---
+// JOIN
+color: #778A50;
+ font-size: 14px;
+ font-family: Noto Sans;
+ font-weight: 700;
+ word-wrap: break-word
