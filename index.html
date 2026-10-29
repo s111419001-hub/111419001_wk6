@@ -1,41 +1,81 @@
-
-    <!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
-<meta charset="utf-8" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vegetables</title>
 <link rel="stylesheet" href="globals.css">
 <link rel="stylesheet" href="styleguide.css">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="vegetable-layout" ><footer class="footer" ><p class="text-wrapper" >Copyrights 2017 Vegetables cise / Design by Vegetables</p></footer>
-<div class="body" ><div class="box-vegetables" ><div class="box-vegetables-title" ><div class="div" >Vegetables</div></div>
-<div class="img-other-group" ><img class="carrots" src="img/carrots.png" />
-<img class="corn" src="img/corn.png" />
-<img class="peppers" src="img/peppers.png" /></div>
-<div class="rectangle" ></div>
-<p class="p" >Carrots are crunchy, sweet root vegetables packed with beta-carotene, fiber, and Vitamin A. Best known for supporting eye health and immunity, they come in bright orange, purple, and yellow varieties. Versatile and low in calories, they are delicious consumed raw as a crisp snack or cooked in soups, roasts, and salads.</p>
-<div class="rectangle-2" ></div>
-<p class="text-wrapper-2" >Bell peppers (sweet peppers) are vibrant, crunchy vegetables packed with Vitamin C, dietary fiber, and antioxidants. Available in bright red, yellow, orange, and green, they boost immunity and promote skin health. Low in calories, they are delicious eaten raw in salads, stir-fried, or roasted.</p>
-<div class="rectangle-3" ></div>
-<p class="text-wrapper-3" >Corn (maize) is a sweet and versatile cereal grain rich in carbohydrates, dietary fiber, and essential B vitamins. Packed with eye-healthy antioxidants like lutein, it provides a steady source of energy. Enjoyed worldwide, corn can be eaten fresh on the cob, popped into popcorn, roasted, or cooked into soups and salads.</p></div>
-<div class="box-contact" ><div class="box-contact-title" ><div class="text-wrapper-4" >Contact</div></div>
-<div class="box-contact-text" ><p class="vegetables-are" >Vegetables are essential, nutrient-dense foods that form the foundation of a healthy diet. Packed with vital vitamins, minerals, dietary fiber, and antioxidants, they strengthen the immune system, improve digestion, and support long-term cardiovascular health. Available in a vibrant array of colors and types—from leafy greens to root crops—each variety provides unique protective nutrients.<br/><br/>Incredibly versatile in the kitchen, vegetables adapt seamlessly to diverse culinary traditions around the world. They can be eaten raw in crisp salads, lightly steamed, stir-fried, roasted, or blended into hearty soups and smoothies. Incorporating a colorful mix of vegetables into daily meals is one of the simplest and most effective ways to maintain overall vitality.</p>
-<p class="text-wrapper-5" >For any questions or suggestions about Vegetables, Vegetables Club or your online order you can contact Vegetables Customer Service by phone, email or post and we’ll be happy to help.</p>
-<img class="line" src="img/line-2.svg" />
-<p class="e-mail-vegetables" >E-mail : Vegetables@aaabbccc.com <br/>PHONE : +886-123-456-789</p></div></div>
-<div class="box-main-content" ></div></div>
-<div class="navbar" ><div class="text-wrapper-6" >Home</div>
-<div class="text-wrapper-7" >About Us</div>
-<div class="text-wrapper-8" >Vegetables</div>
-<div class="text-wrapper-9" >Online</div>
-<div class="text-wrapper-10" >Contact</div></div>
-<header class="header" ><div class="text-wrapper-11" >Vegetables</div>
-<div class="btn-group" ><img class="facebook" src="img/facebook.png" />
-<img class="instagram" src="img/instagram.png" />
-<img class="img" src="img/line.svg" />
-<button class="btn-LOGIN-box" ><div class="text-wrapper-12" >LOGIN</div></button>
-<button class="btn-JOIN-box" ><div class="text-wrapper-12" >JOIN</div></button></div></header></div>
+<div class="vegetable-layout">
+<header class="header">
+<h1 class="text-wrapper-11">Vegetables</h1>
+<div class="btn-group" aria-label="Social media and account links">
+<a href="#" aria-label="Facebook">
+<img class="facebook" src="img/facebook.png" alt="Facebook">
+</a>
+<a href="#" aria-label="Instagram">
+<img class="instagram" src="img/instagram.png" alt="Instagram">
+</a>
+<a href="#" aria-label="Line">
+<img class="img" src="img/line.svg" alt="Line">
+</a>
+<button class="btn-LOGIN-box" type="button">
+<span class="text-wrapper-12">LOGIN</span>
+</button>
+<button class="btn-JOIN-box" type="button">
+<span class="text-wrapper-12">JOIN</span>
+</button>
+</div>
+</header>
+<nav class="navbar" aria-label="Primary navigation">
+<a class="text-wrapper-6" href="#">Home</a>
+<a class="text-wrapper-7" href="#">About Us</a>
+<a class="text-wrapper-8" href="#">Vegetables</a>
+<a class="text-wrapper-9" href="#">Online</a>
+<a class="text-wrapper-10" href="#">Contact</a>
+</nav>
+<main class="body">
+<section class="box-main-content" aria-label="Featured vegetables"></section>
+<section class="box-vegetables" aria-labelledby="vegetables-title">
+<header class="box-vegetables-title">
+<h2 class="div" id="vegetables-title">Vegetables</h2>
+</header>
+<div class="img-other-group" aria-label="Featured vegetables">
+<img class="carrots" src="img/carrots.png" alt="Fresh carrots">
+<img class="corn" src="img/corn.png" alt="Fresh corn">
+<img class="peppers" src="img/peppers.png" alt="Fresh bell peppers">
+</div>
+<article class="rectangle">
+<p class="p">Carrots are crunchy, sweet root vegetables packed with beta-carotene, fiber, and Vitamin A. Best known for supporting eye health and immunity, they come in bright orange, purple, and yellow varieties. Versatile and low in calories, they are delicious consumed raw as a crisp snack or cooked in soups, roasts, and salads.</p>
+</article>
+<article class="rectangle-2">
+<p class="text-wrapper-2">Bell peppers (sweet peppers) are vibrant, crunchy vegetables packed with Vitamin C, dietary fiber, and antioxidants. Available in bright red, yellow, orange, and green, they boost immunity and promote skin health. Low in calories, they are delicious eaten raw in salads, stir-fried, or roasted.</p>
+</article>
+<article class="rectangle-3">
+<p class="text-wrapper-3">Corn (maize) is a sweet and versatile cereal grain rich in carbohydrates, dietary fiber, and essential B vitamins. Packed with eye-healthy antioxidants like lutein, it provides a steady source of energy. Enjoyed worldwide, corn can be eaten fresh on the cob, popped into popcorn, roasted, or cooked into soups and salads.</p>
+</article>
+</section>
+<section class="box-contact" aria-labelledby="contact-title">
+<header class="box-contact-title">
+<h2 class="text-wrapper-4" id="contact-title">Contact</h2>
+</header>
+<div class="box-contact-text">
+<p class="vegetables-are">Vegetables are essential, nutrient-dense foods that form the foundation of a healthy diet. Packed with vital vitamins, minerals, dietary fiber, and antioxidants, they strengthen the immune system, improve digestion, and support long-term cardiovascular health. Available in a vibrant array of colors and types—from leafy greens to root crops—each variety provides unique protective nutrients.<br><br>Incredibly versatile in the kitchen, vegetables adapt seamlessly to diverse culinary traditions around the world. They can be eaten raw in crisp salads, lightly steamed, stir-fried, roasted, or blended into hearty soups and smoothies. Incorporating a colorful mix of vegetables into daily meals is one of the simplest and most effective ways to maintain overall vitality.</p>
+<p class="text-wrapper-5">For any questions or suggestions about Vegetables, Vegetables Club or your online order you can contact Vegetables Customer Service by phone, email or post and we’ll be happy to help.</p>
+<img class="line" src="img/line-2.svg" alt="" aria-hidden="true">
+<p class="e-mail-vegetables">
+E-mail : <a href="mailto:Vegetables@aaabbccc.com">Vegetables@aaabbccc.com</a><br>
+PHONE : <a href="tel:+886123456789">+886-123-456-789</a>
+</p>
+</div>
+</section>
+</main>
+<footer class="footer">
+<p class="text-wrapper">Copyrights 2017 Vegetables cise / Design by Vegetables</p>
+</footer>
+</div>
 </body>
 </html>
