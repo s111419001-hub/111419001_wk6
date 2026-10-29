@@ -464,3 +464,42 @@
   border: 1px solid;
   border-color: var(--primary);
 }
+/* Existing style.css content is injected here automatically. */
+
+.vegetable-layout .btn-group > a {
+  display: contents;
+}
+
+.vegetable-layout .navbar > a {
+  display: block;
+  color: var(--background);
+  text-decoration: none;
+}
+
+.vegetable-layout .e-mail-vegetables a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.vegetable-layout .e-mail-vegetables a:hover,
+.vegetable-layout .e-mail-vegetables a:focus-visible {
+  text-decoration: underline;
+}
+
+.vegetable-layout .navbar > a:focus-visible,
+.vegetable-layout .btn-group > a:focus-visible {
+  outline: 2px solid #4a90e2;
+  outline-offset: 2px;
+}
+
+.vegetable-layout .btn-LOGIN-box,
+.vegetable-layout .btn-JOIN-box {
+  cursor: pointer;
+}
+
+.vegetable-layout .btn-LOGIN-box:hover,
+.vegetable-layout .btn-JOIN-box:hover,
+.vegetable-layout .btn-LOGIN-box:focus-visible,
+.vegetable-layout .btn-JOIN-box:focus-visible {
+  background-color: var(--background);
+}
