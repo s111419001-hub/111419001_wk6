@@ -1,189 +1,361 @@
-/* 基本重設與色票變數 */
-:root {
-  --primary: #778A50;       /* 橄欖綠主色 */
-  --bg-color: #EDF2C5;      /* 網頁淺綠底色 */
-  --content-bg: #F7FBDA;    /* 內容卡片米黃底色 */
-  --content-text: #7D7D7D;  /* 內文深灰色 */
+.vegetable-layout {
+  	width: 100%;
+  	height: 1171px;
+  	position: relative;
+  	background-color: #edf2c5;
+  	overflow: hidden;
+  	text-align: left;
+  	font-size: 12px;
+  	color: #edf2c5;
+  	font-family: 'Noto Sans';
 }
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: 'Noto Sans', sans-serif;
-  background-color: var(--bg-color);
-  color: var(--content-text);
-}
-
-/* 版心容器 */
-.container {
-  max-width: 940px;
-  margin: 0 auto;
-  padding-top: 36px;
-}
-
-/* Header */
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 12px;
-}
-
-.logo {
-  font-size: 44px;
-  font-weight: 900;
-  color: var(--primary);
-  line-height: normal;
-}
-
-.header-actions {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.social-icon {
-  width: 24px;
-  height: 24px;
-  display: block;
-}
-
-.divider {
-  width: 1px;
-  height: 24px;
-  background-color: var(--primary);
-}
-
-.btn-outline {
-  text-decoration: none;
-  font-size: 14px;
-  font-weight: 700;
-  color: var(--primary);
-  border: 1px solid var(--primary);
-  border-radius: 3px;
-  padding: 4px 8px;
-}
-
-/* Navbar */
-.navbar {
-  background-color: var(--primary);
-  border-radius: 3px;
-  margin-bottom: 20px;
-}
-
-.nav-list {
-  list-style: none;
-  display: flex;
-  gap: 60px;
-  padding: 12px 30px;
-}
-
-.nav-list a {
-  text-decoration: none;
-  color: var(--bg-color);
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 150%;
-}
-
-/* 主視覺 Banner */
-.banner {
-  margin-bottom: 30px;
-}
-
-.banner img {
-  width: 100%;
-  height: 448px;
-  object-fit: cover;
-  display: block;
-}
-
-/* 下方雙欄內容區 */
-.main-content {
-  display: flex;
-  justify-content: space-between;
-  gap: 52px;
-  margin-bottom: 35px;
-}
-
-.column {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-}
-
-.section-title {
-  background-color: var(--primary);
-  color: var(--bg-color);
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 150%;
-  padding: 10px 30px;
-  border-radius: 3px;
-  margin-bottom: 15px;
-}
-
-/* 左欄：三張蔬菜卡片 */
-.veg-cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
-  flex: 1;
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
-}
-
-.card img {
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  display: block;
-  margin-bottom: 12px;
-}
-
-.card-text {
-  background-color: var(--content-bg);
-  padding: 12px;
-  font-size: 12px;
-  line-height: 150%;
-  flex: 1;
-}
-
-/* 右欄：Contact 區塊 */
-.contact-box {
-  background-color: var(--content-bg);
-  padding: 16px;
-  font-size: 12px;
-  line-height: 150%;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.contact-text p {
-  margin-bottom: 12px;
-}
-
-.contact-line {
-  border: none;
-  border-top: 1px solid var(--content-text);
-  margin: 12px 0;
-}
-
-/* Footer */
 .footer {
-  background-color: var(--primary);
-  color: var(--bg-color);
-  text-align: center;
-  padding: 24px 0;
-  font-size: 12px;
-  line-height: 150%;
+  	position: absolute;
+  	width: 100%;
+  	right: 0px;
+  	bottom: 0px;
+  	left: 0px;
+  	border-radius: 3px;
+  	background-color: #778a50;
+  	height: 60px;
+  	overflow: hidden;
+  	flex-shrink: 0;
 }
+.copyrights-2017-vegetables {
+  	position: absolute;
+  	top: calc(50% - 9px);
+  	left: calc(50% - 151px);
+  	line-height: 150%;
+}
+.body {
+  	position: absolute;
+  	top: 166px;
+  	left: 160px;
+  	width: 1120px;
+  	height: 1019px;
+  	flex-shrink: 0;
+  	font-size: 11px;
+  	color: #7d7d7d;
+  	font-family: Inter;
+}
+.box-vegetables {
+  	position: absolute;
+  	top: 480px;
+  	left: 0px;
+  	width: 528px;
+  	height: 201px;
+}
+.box-vegetables-title {
+  	position: absolute;
+  	width: 100%;
+  	top: 0px;
+  	right: 0px;
+  	left: 0px;
+  	border-radius: 3px;
+  	background-color: #778a50;
+  	height: 45px;
+  	overflow: hidden;
+  	flex-shrink: 0;
+  	font-size: 16px;
+  	color: #edf2c5;
+  	font-family: 'Noto Sans';
+}
+.vegetables {
+  	position: absolute;
+  	top: 10px;
+  	left: 30px;
+  	line-height: 150%;
+  	font-weight: 900;
+}
+.img-other-group {
+  	position: absolute;
+  	top: 61px;
+  	left: 0px;
+  	width: 528px;
+  	height: 140px;
+  	flex-shrink: 0;
+}
+.carrots-icon {
+  	position: absolute;
+  	width: calc(100% - 363px);
+  	top: 0px;
+  	right: 363px;
+  	left: 0px;
+  	max-width: 100%;
+  	overflow: hidden;
+  	height: 140px;
+  	object-fit: cover;
+}
+.corn-icon {
+  	position: absolute;
+  	width: calc(100% - 362px);
+  	top: 0px;
+  	right: 181px;
+  	left: 181px;
+  	max-width: 100%;
+  	overflow: hidden;
+  	height: 140px;
+  	object-fit: cover;
+}
+.peppers-icon {
+  	position: absolute;
+  	width: calc(100% - 363px);
+  	top: 0px;
+  	right: 0px;
+  	left: 363px;
+  	max-width: 100%;
+  	overflow: hidden;
+  	height: 140px;
+  	object-fit: cover;
+}
+.box-vegetables-child {
+  	position: absolute;
+  	top: 201px;
+  	left: 1px;
+  	background-color: #f7fbda;
+  	width: 164px;
+  	height: 211px;
+  	flex-shrink: 0;
+}
+.carrots-are-crunchy {
+  	position: absolute;
+  	top: 215px;
+  	left: 12px;
+  	display: inline-block;
+  	width: 141px;
+  	flex-shrink: 0;
+}
+.box-vegetables-item {
+  	position: absolute;
+  	top: 201px;
+  	left: 364px;
+  	background-color: #f7fbda;
+  	width: 164px;
+  	height: 211px;
+  	flex-shrink: 0;
+}
+.bell-peppers-sweet {
+  	position: absolute;
+  	top: 215px;
+  	left: 375px;
+  	display: inline-block;
+  	width: 141px;
+  	flex-shrink: 0;
+}
+.box-vegetables-inner {
+  	position: absolute;
+  	top: 201px;
+  	left: 182px;
+  	background-color: #f7fbda;
+  	width: 164px;
+  	height: 211px;
+  	flex-shrink: 0;
+}
+.corn-maize-is {
+  	position: absolute;
+  	top: 215px;
+  	left: 193px;
+  	display: inline-block;
+  	width: 141px;
+  	flex-shrink: 0;
+}
+.box-contact {
+  	position: absolute;
+  	top: 480px;
+  	left: 592px;
+  	width: 528px;
+  	height: 416px;
+  	font-size: 16px;
+  	color: #edf2c5;
+  	font-family: 'Noto Sans';
+}
+.box-contact-title {
+  	position: absolute;
+  	width: 100%;
+  	top: 0px;
+  	right: 0px;
+  	left: 0px;
+  	border-radius: 3px;
+  	background-color: #778a50;
+  	height: 45px;
+  	overflow: hidden;
+}
+.box-contact-text {
+  	position: absolute;
+  	width: 100%;
+  	top: 45px;
+  	right: 0px;
+  	left: 0px;
+  	background-color: #f7fbda;
+  	height: 367px;
+  	font-size: 12px;
+  	color: #7d7d7d;
+}
+.for-any-questions {
+  	position: absolute;
+  	top: 241px;
+  	left: 16px;
+  	line-height: 150%;
+  	display: flex;
+  	align-items: center;
+  	width: 496px;
+}
+.vegetables-are-essential {
+  	position: absolute;
+  	top: 17px;
+  	left: 16px;
+  	line-height: 150%;
+  	display: flex;
+  	align-items: center;
+  	width: 496px;
+}
+.box-contact-text-child {
+  	position: absolute;
+  	top: 303.5px;
+  	left: 15.5px;
+  	border-top: 1px solid #7d7d7d;
+  	box-sizing: border-box;
+  	width: 497px;
+  	height: 1px;
+}
+.e-mail-vegetablesaaabbcccc {
+  	position: absolute;
+  	top: 313px;
+  	left: 16px;
+  	line-height: 150%;
+  	display: flex;
+  	align-items: center;
+  	width: 496px;
+  	height: 36px;
+}
+.box-main-content-icon {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	width: 1120px;
+  	height: 448px;
+  	object-fit: cover;
+}
+.nav {
+  	position: absolute;
+  	width: calc(100% - 320px);
+  	top: 106px;
+  	right: 160px;
+  	left: 160px;
+  	border-radius: 3px;
+  	background-color: #778a50;
+  	height: 44px;
+  	overflow: hidden;
+  	flex-shrink: 0;
+  	font-size: 16px;
+}
+.about-us {
+  	position: absolute;
+  	top: 10px;
+  	left: 141px;
+  	line-height: 150%;
+  	font-weight: 900;
+}
+.vegetables2 {
+  	position: absolute;
+  	top: 10px;
+  	left: 282px;
+  	line-height: 150%;
+  	font-weight: 900;
+}
+.online {
+  	position: absolute;
+  	top: 10px;
+  	left: 441px;
+  	line-height: 150%;
+  	font-weight: 900;
+}
+.contact2 {
+  	position: absolute;
+  	top: 10px;
+  	left: 557px;
+  	line-height: 150%;
+  	font-weight: 900;
+}
+.header {
+  	position: absolute;
+  	top: 36px;
+  	left: 160px;
+  	width: 1122px;
+  	height: 62px;
+  	flex-shrink: 0;
+  	font-size: 44px;
+  	color: #778a50;
+}
+.vegetables3 {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	font-weight: 900;
+}
+.btn-group {
+  	position: absolute;
+  	top: 19px;
+  	left: 914px;
+  	width: 208px;
+  	height: 24px;
+  	font-size: 14px;
+}
+.facebook-icon {
+  	position: absolute;
+  	top: 0px;
+  	right: 184px;
+  	width: 24px;
+  	height: 24px;
+  	object-fit: cover;
+  	flex-shrink: 0;
+}
+.instagram-icon {
+  	position: absolute;
+  	top: 0px;
+  	right: 148px;
+  	width: 24px;
+  	height: 24px;
+  	object-fit: cover;
+  	flex-shrink: 0;
+}
+.btn-login-box {
+  	position: absolute;
+  	top: 0px;
+  	right: 63px;
+  	border-radius: 3px;
+  	border: 1px solid #778a50;
+  	overflow: hidden;
+  	display: flex;
+  	align-items: flex-start;
+  	padding: 4px 8px;
+  	flex-shrink: 0;
+}
+.login {
+  	position: relative;
+}
+.btn-join-box {
+  	position: absolute;
+  	top: 0px;
+  	right: 0px;
+  	border-radius: 3px;
+  	border: 1px solid #778a50;
+  	box-sizing: border-box;
+  	width: 49px;
+  	overflow: hidden;
+  	display: flex;
+  	align-items: flex-start;
+  	padding: 4px 8px;
+  	flex-shrink: 0;
+}
+.line {
+  	position: absolute;
+  	top: -0.5px;
+  	right: 135.5px;
+  	border-right: 1px solid #778a50;
+  	box-sizing: border-box;
+  	width: 1px;
+  	height: 25px;
+  	flex-shrink: 0;
+}
+
