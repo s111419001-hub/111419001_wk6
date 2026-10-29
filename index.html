@@ -1,80 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta charset="utf-8" />
 <title>Vegetables</title>
-<link rel="stylesheet" href="globals.css">
-<link rel="stylesheet" href="styleguide.css">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="globals.css" />
+<link rel="stylesheet" href="styleguide.css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+/** @type {import('tailwindcss').Config} */
+    tailwind.config = {
+      corePlugins: {
+        preflight: false,
+      },
+      theme: {
+        extend: {
+          colors: {
+            background: "var(--background)",
+            contentbg: "var(--contentbg)",
+            contenttext: "var(--contenttext)",
+            primary: "var(--primary)",
+          },
+          fontFamily: {
+            "head-1": "var(--head-1-font-family)",
+            "head-2": "var(--head-2-font-family)",
+            "text-1": "var(--text-1-font-family)",
+            "text-2": "var(--text-2-font-family)",
+          },
+        },
+      },
+      plugins: [],
+    };
+  </script>
 </head>
 <body>
-<div class="vegetable-layout">
-<header class="header">
-<h1 class="text-wrapper-11">Vegetables</h1>
-<div class="btn-group" aria-label="Social media and account links">
+<div class="bg-background overflow-hidden w-full min-w-[1440px] min-h-[1171px] relative">
+<header class="absolute top-9 left-40 w-[1122px] h-[62px] flex gap-[661px] bg-transparent">
+<h1 class="w-[253px] h-[60px] text-primary text-[length:var(--head-1-font-size)] leading-[var(--head-1-line-height)] font-head-1 font-[number:var(--head-1-font-weight)] tracking-[var(--head-1-letter-spacing)] [font-style:var(--head-1-font-style)]">
+Vegetables
+      </h1>
+<div class="mt-[19px] w-52 flex justify-end">
 <a href="#" aria-label="Facebook">
-<img class="facebook" src="img/facebook.png" alt="Facebook">
+<img class="w-6 h-6 -mr-6 object-cover" src="img/facebook.png" alt="" />
 </a>
 <a href="#" aria-label="Instagram">
-<img class="instagram" src="img/instagram.png" alt="Instagram">
+<img class="w-6 h-6 -mr-px object-cover" src="img/instagram.png" alt="" />
 </a>
-<a href="#" aria-label="Line">
-<img class="img" src="img/line.svg" alt="Line">
-</a>
-<button class="btn-LOGIN-box" type="button">
-<span class="text-wrapper-12">LOGIN</span>
+<img class="w-px h-6 mr-[-125px] object-cover" src="img/line.svg" alt="" />
+<button
+          type="button"
+          class="all-unset box-border inline-flex w-[62px] h-[27px] relative mr-3.5 items-start px-2 py-1 rounded-[3px] overflow-hidden border border-solid border-primary"
+          aria-label="Log in"
+        >
+<span class="relative w-fit mt-[-1.00px] font-text-1 font-[number:var(--text-1-font-weight)] text-primary text-[length:var(--text-1-font-size)] tracking-[var(--text-1-letter-spacing)] leading-[var(--text-1-line-height)] [font-style:var(--text-1-font-style)]">
+LOGIN
+          </span>
 </button>
-<button class="btn-JOIN-box" type="button">
-<span class="text-wrapper-12">JOIN</span>
+<button
+          type="button"
+          class="all-unset box-border flex w-[49px] h-[27px] relative items-start px-2 py-1 rounded-[3px] overflow-hidden border border-solid border-primary"
+          aria-label="Join"
+        >
+<span class="relative w-fit mt-[-1.00px] font-text-1 font-[number:var(--text-1-font-weight)] text-primary text-[length:var(--text-1-font-size)] tracking-[var(--text-1-letter-spacing)] leading-[var(--text-1-line-height)] [font-style:var(--text-1-font-style)]">
+JOIN
+          </span>
 </button>
 </div>
 </header>
-<nav class="navbar" aria-label="Primary navigation">
-<a class="text-wrapper-6" href="#">Home</a>
-<a class="text-wrapper-7" href="#">About Us</a>
-<a class="text-wrapper-8" href="#">Vegetables</a>
-<a class="text-wrapper-9" href="#">Online</a>
-<a class="text-wrapper-10" href="#">Contact</a>
+<nav
+      class="absolute w-[calc(100%_-_320px)] top-[106px] left-40 h-11 flex bg-primary rounded-[3px] overflow-hidden"
+      aria-label="Primary navigation"
+    >
+<a
+        class="w-[49px] ml-[30px] mt-2.5 h-6 font-head-2 font-[number:var(--head-2-font-weight)] text-background text-[length:var(--head-2-font-size)] tracking-[var(--head-2-letter-spacing)] leading-[var(--head-2-line-height)] whitespace-nowrap [font-style:var(--head-2-font-style)]"
+        href="#"
+      >
+Home
+      </a>
+<a
+        class="mt-2.5 w-[75px] h-6 ml-[62px] font-head-2 font-[number:var(--head-2-font-weight)] text-background text-[length:var(--head-2-font-size)] tracking-[var(--head-2-letter-spacing)] leading-[var(--head-2-line-height)] whitespace-nowrap [font-style:var(--head-2-font-style)]"
+        href="#about"
+      >
+About Us
+      </a>
+<a
+        class="w-[92px] ml-[66px] mt-2.5 h-6 font-head-2 font-[number:var(--head-2-font-weight)] text-background text-[length:var(--head-2-font-size)] tracking-[var(--head-2-letter-spacing)] leading-[var(--head-2-line-height)] whitespace-nowrap [font-style:var(--head-2-font-style)]"
+        href="#vegetables"
+      >
+Vegetables
+      </a>
+<a
+        class="w-[55px] ml-[67px] mt-2.5 h-6 font-head-2 font-[number:var(--head-2-font-weight)] text-background text-[length:var(--head-2-font-size)] tracking-[var(--head-2-letter-spacing)] leading-[var(--head-2-line-height)] whitespace-nowrap [font-style:var(--head-2-font-style)]"
+        href="#online"
+      >
+Online
+      </a>
+<a
+        class="mt-2.5 w-[65px] h-6 ml-[61px] font-head-2 font-[number:var(--head-2-font-weight)] text-background text-[length:var(--head-2-font-size)] tracking-[var(--head-2-letter-spacing)] leading-[var(--head-2-line-height)] whitespace-nowrap [font-style:var(--head-2-font-style)]"
+        href="#contact"
+      >
+Contact
+      </a>
 </nav>
-<main class="body">
-<section class="box-main-content" aria-label="Featured vegetables"></section>
-<section class="box-vegetables" aria-labelledby="vegetables-title">
-<header class="box-vegetables-title">
-<h2 class="div" id="vegetables-title">Vegetables</h2>
-</header>
-<div class="img-other-group" aria-label="Featured vegetables">
-<img class="carrots" src="img/carrots.png" alt="Fresh carrots">
-<img class="corn" src="img/corn.png" alt="Fresh corn">
-<img class="peppers" src="img/peppers.png" alt="Fresh bell peppers">
+<main class="absolute top-[166px] left-40 w-[1120px] h-[1019px]">
+<figure
+        class="absolute top-0 left-0 w-[1120px] h-[448px] bg-[url(legacy:image:md5:14:116)] bg-cover bg-[50%_50%]"
+        aria-label="Fresh vegetables"
+      ></figure>
+<section
+        id="vegetables"
+        class="absolute top-[480px] left-0 w-[528px] h-[201px]"
+        aria-labelledby="vegetables-heading"
+      >
+<h2 class="absolute w-full top-0 left-0 h-[45px] flex bg-primary rounded-[3px] overflow-hidden">
+<span
+            id="vegetables-heading"
+            class="mt-2.5 w-[92px] h-6 ml-[30px] text-background text-[length:var(--head-2-font-size)] leading-[var(--head-2-line-height)] whitespace-nowrap font-head-2 font-[number:var(--head-2-font-weight)] tracking-[var(--head-2-letter-spacing)] [font-style:var(--head-2-font-style)]"
+          >
+Vegetables
+          </span>
+</h2>
+<div class="absolute top-[61px] left-0 w-[528px] h-[140px]" aria-label="Vegetable varieties">
+<img class="absolute w-full top-0 left-0 h-[140px] object-cover" src="img/carrots.png" alt="Carrots" />
+<img class="absolute w-[calc(100%_-_181px)] top-0 left-[181px] h-[140px] object-cover" src="img/corn.png" alt="Corn" />
+<img class="absolute w-[calc(100%_-_363px)] top-0 left-[363px] h-[140px] object-cover" src="img/peppers.png" alt="Bell peppers" />
 </div>
-<article class="rectangle">
-<p class="p">Carrots are crunchy, sweet root vegetables packed with beta-carotene, fiber, and Vitamin A. Best known for supporting eye health and immunity, they come in bright orange, purple, and yellow varieties. Versatile and low in calories, they are delicious consumed raw as a crisp snack or cooked in soups, roasts, and salads.</p>
+<article class="left-px absolute top-[201px] w-[164px] h-[211px] bg-contentbg">
+<p class="absolute top-[14px] left-3 w-[141px] [font-family:'Inter-Regular',Helvetica] font-normal text-contenttext text-[11px] tracking-[0] leading-[normal]">
+Carrots are crunchy, sweet root vegetables packed with beta-carotene, fiber, and Vitamin A. Best known for supporting eye health and immunity, they come in bright orange, purple, and yellow varieties. Versatile and low in calories, they are delicious consumed raw as a crisp snack or cooked in soups, roasts, and salads.
+          </p>
 </article>
-<article class="rectangle-2">
-<p class="text-wrapper-2">Bell peppers (sweet peppers) are vibrant, crunchy vegetables packed with Vitamin C, dietary fiber, and antioxidants. Available in bright red, yellow, orange, and green, they boost immunity and promote skin health. Low in calories, they are delicious eaten raw in salads, stir-fried, or roasted.</p>
+<article class="left-[182px] absolute top-[201px] w-[164px] h-[211px] bg-contentbg">
+<p class="absolute top-[14px] left-[11px] w-[141px] [font-family:'Inter-Regular',Helvetica] font-normal text-contenttext text-[11px] tracking-[0] leading-[normal]">
+Corn (maize) is a sweet and versatile cereal grain rich in carbohydrates, dietary fiber, and essential B vitamins. Packed with eye-healthy antioxidants like lutein, it provides a steady source of energy. Enjoyed worldwide, corn can be eaten fresh on the cob, popped into popcorn, roasted, or cooked into soups and salads.
+          </p>
 </article>
-<article class="rectangle-3">
-<p class="text-wrapper-3">Corn (maize) is a sweet and versatile cereal grain rich in carbohydrates, dietary fiber, and essential B vitamins. Packed with eye-healthy antioxidants like lutein, it provides a steady source of energy. Enjoyed worldwide, corn can be eaten fresh on the cob, popped into popcorn, roasted, or cooked into soups and salads.</p>
+<article class="left-[364px] absolute top-[201px] w-[164px] h-[211px] bg-contentbg">
+<p class="absolute top-[14px] left-[11px] w-[141px] [font-family:'Inter-Regular',Helvetica] font-normal text-contenttext text-[11px] tracking-[0] leading-[normal]">
+Bell peppers (sweet peppers) are vibrant, crunchy vegetables packed with Vitamin C, dietary fiber, and antioxidants. Available in bright red, yellow, orange, and green, they boost immunity and promote skin health. Low in calories, they are delicious eaten raw in salads, stir-fried, or roasted.
+          </p>
 </article>
 </section>
-<section class="box-contact" aria-labelledby="contact-title">
-<header class="box-contact-title">
-<h2 class="text-wrapper-4" id="contact-title">Contact</h2>
-</header>
-<div class="box-contact-text">
-<p class="vegetables-are">Vegetables are essential, nutrient-dense foods that form the foundation of a healthy diet. Packed with vital vitamins, minerals, dietary fiber, and antioxidants, they strengthen the immune system, improve digestion, and support long-term cardiovascular health. Available in a vibrant array of colors and types—from leafy greens to root crops—each variety provides unique protective nutrients.<br><br>Incredibly versatile in the kitchen, vegetables adapt seamlessly to diverse culinary traditions around the world. They can be eaten raw in crisp salads, lightly steamed, stir-fried, roasted, or blended into hearty soups and smoothies. Incorporating a colorful mix of vegetables into daily meals is one of the simplest and most effective ways to maintain overall vitality.</p>
-<p class="text-wrapper-5">For any questions or suggestions about Vegetables, Vegetables Club or your online order you can contact Vegetables Customer Service by phone, email or post and we’ll be happy to help.</p>
-<img class="line" src="img/line-2.svg" alt="" aria-hidden="true">
-<p class="e-mail-vegetables">
-E-mail : <a href="mailto:Vegetables@aaabbccc.com">Vegetables@aaabbccc.com</a><br>
-PHONE : <a href="tel:+886123456789">+886-123-456-789</a>
-</p>
+<section
+        id="contact"
+        class="absolute top-[480px] left-[592px] w-[528px] h-[416px] flex flex-col"
+        aria-labelledby="contact-heading"
+      >
+<h2 class="flex-1 max-h-[45px] flex bg-primary rounded-[3px] overflow-hidden">
+<span
+            id="contact-heading"
+            class="mt-2.5 w-[65px] h-6 ml-[30px] font-head-2 font-[number:var(--head-2-font-weight)] text-background text-[length:var(--head-2-font-size)] tracking-[var(--head-2-letter-spacing)] leading-[var(--head-2-line-height)] whitespace-nowrap [font-style:var(--head-2-font-style)]"
+          >
+Contact
+          </span>
+</h2>
+<div class="flex-1 max-h-[367px] flex flex-col bg-contentbg">
+<div
+            id="about"
+            class="ml-4 w-[496px] h-[198px] mt-[17px] [font-family:'Noto_Sans-Regular',Helvetica] font-normal text-[#7d7d7d] text-xs tracking-[0] leading-[18px]"
+          >
+<p>
+Vegetables are essential, nutrient-dense foods that form the foundation of a healthy diet. Packed with vital vitamins, minerals, dietary fiber, and antioxidants, they strengthen the immune system, improve digestion, and support long-term cardiovascular health. Available in a vibrant array of colors and types—from leafy greens to root crops—each variety provides unique protective nutrients.
+            </p>
+<p class="mt-[18px]">
+Incredibly versatile in the kitchen, vegetables adapt seamlessly to diverse culinary traditions around the world. They can be eaten raw in crisp salads, lightly steamed, stir-fried, roasted, or blended into hearty soups and smoothies. Incorporating a colorful mix of vegetables into daily meals is one of the simplest and most effective ways to maintain overall vitality.
+            </p>
+</div>
+<p
+            id="online"
+            class="flex items-center ml-4 w-[496px] h-[54px] mt-[26px] font-text-2 font-[number:var(--text-2-font-weight)] text-contenttext text-[length:var(--text-2-font-size)] tracking-[var(--text-2-letter-spacing)] leading-[var(--text-2-line-height)] [font-style:var(--text-2-font-style)]"
+          >
+For any questions or suggestions about Vegetables, Vegetables Club or your online order you can contact Vegetables Customer Service by phone, email or post and we’ll be happy to help.
+          </p>
+<img class="ml-4 w-[496px] h-px mt-2 object-cover" src="img/line-2.svg" alt="" />
+<address
+            class="ml-4 w-[496px] h-9 mt-[9px] font-text-2 font-[number:var(--text-2-font-weight)] text-contenttext text-[length:var(--text-2-font-size)] tracking-[var(--text-2-letter-spacing)] leading-[var(--text-2-line-height)] [font-style:var(--text-2-font-style)]"
+          >
+E-mail : Vegetables@aaabbccc.com<br />
+PHONE : +886-123-456-789
+          </address>
 </div>
 </section>
 </main>
-<footer class="footer">
-<p class="text-wrapper">Copyrights 2017 Vegetables cise / Design by Vegetables</p>
+<footer class="absolute w-full left-0 bottom-0 h-[60px] flex items-center justify-center bg-primary rounded-[3px] overflow-hidden">
+<p class="h-[18px] ml-[11px] w-[313px] font-text-2 font-[number:var(--text-2-font-weight)] text-background text-[length:var(--text-2-font-size)] tracking-[var(--text-2-letter-spacing)] leading-[var(--text-2-line-height)] whitespace-nowrap [font-style:var(--text-2-font-style)]">
+Copyrights 2017 Vegetables cise / Design by Vegetables
+      </p>
 </footer>
 </div>
 </body>
