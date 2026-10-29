@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegetables</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        outerBg: '#d0dab3',
+                        innerBg: '#e5eecf',
+                        oliveTitle: '#51682f',
+                        oliveNav: '#6c8147',
+                        cardGray: '#d9d9d9',
+                        footerBg: '#5c6f3d',
+                        footerText: '#e2edd0'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Exact layout typography and line height styling */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .vegetables-title {
+            font-family: 'Trebuchet MS', Arial, sans-serif;
+            font-weight: 800;
+        }
+
+        .text-justify-custom {
+            text-align: justify;
+            text-justify: inter-word;
+        }
+    </style>
+</head>
+
+<body class="bg-outerBg min-h-screen py-6 px-2 sm:px-4 flex justify-center items-start">
+
+    <!-- Main Container Box matching image canvas -->
+    <div class="w-full max-w-[960px] bg-innerBg p-6 flex flex-col gap-4 shadow-md">
+
+        <!-- Top Header Area -->
+        <header class="flex flex-col sm:flex-row justify-between items-end pb-1 gap-4">
+            <!-- Title -->
+            <h1
+                class="text-4xl sm:text-5xl text-oliveTitle vegetables-title tracking-tight font-extrabold leading-none">
+                Vegetables
+            </h1>
+
+            <!-- Social Links & Buttons -->
+            <div class="flex items-center gap-1.5 text-xs">
+                <!-- Facebook 按鈕 -->
+                <a href="#" class="w-6 h-6 bg-oliveNav flex items-center justify-center rounded-sm hover:opacity-90">
+                    <img src="img/facebook.png" alt="Facebook" class="w-full h-full object-contain">
+                </a>
+
+                <!-- Instagram 按鈕 -->
+                <a href="#" class="w-6 h-6 bg-oliveNav flex items-center justify-center rounded-sm hover:opacity-90">
+                    <img src="img/instagram.png" alt="Instagram" class="w-full h-full object-contain">
+                </a>
+                <a href="#"
+                    class="px-2.5 py-0.5 border border-oliveNav text-oliveNav bg-innerBg font-medium rounded-sm text-[11px] hover:bg-oliveNav hover:text-white transition-colors">
+                    LOGIN
+                </a>
+                <a href="#"
+                    class="px-2.5 py-0.5 border border-oliveNav text-oliveNav bg-innerBg font-medium rounded-sm text-[11px] hover:bg-oliveNav hover:text-white transition-colors">
+                    JOIN
+                </a>
+            </div>
+        </header>
+
+        <!-- Navigation Bar -->
+        <nav class="bg-oliveNav text-white font-bold text-xs tracking-wide">
+            <ul class="flex flex-wrap text-center">
+                <li class="flex-1 min-w-[70px]">
+                    <a href="#" class="block py-2.5 hover:bg-black/10 transition-colors">Home</a>
+                </li>
+                <li class="flex-1 min-w-[70px]">
+                    <a href="#" class="block py-2.5 hover:bg-black/10 transition-colors">About Us</a>
+                </li>
+                <li class="flex-1 min-w-[70px]">
+                    <a href="#" class="block py-2.5 hover:bg-black/10 transition-colors">Vegetables</a>
+                </li>
+                <li class="flex-1 min-w-[70px]">
+                    <a href="#" class="block py-2.5 hover:bg-black/10 transition-colors">Online</a>
+                </li>
+                <li class="flex-1 min-w-[70px]">
+                    <a href="#" class="block py-2.5 hover:bg-black/10 transition-colors">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Main Banner Image -->
+        <div class="w-full h-[220px] sm:h-[340px] md:h-[400px] overflow-hidden">
+            <img src="img/pumpkin.png" alt="Yellow Squash" class="w-full h-full object-cover" />
+        </div>
+
+        <!-- Two Columns Section -->
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-5 mt-1">
+
+            <!-- Left Column: Vegetables (7 cols) -->
+            <div class="md:col-span-7 flex flex-col gap-3">
+                <!-- Section Header -->
+                <div class="bg-oliveNav text-white font-bold text-xs px-3 py-1.5">
+                    Vegetables
+                </div>
+
+                <!-- 3 Sub-columns for Vegetables -->
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5 items-stretch">
+
+                    <!-- Carrot -->
+                    <div class="flex flex-col">
+                        <div class="h-28 overflow-hidden">
+                            <img src="img/carrot.png" alt="Carrot" class="w-full h-full object-cover" />
+                        </div>
+                        <div class="bg-cardGray p-2.5 flex-1 flex flex-col">
+                            <h3 class="font-bold text-sm text-gray-900 mb-1 leading-tight">Carrot</h3>
+                            <p class="text-[11px] text-gray-800 leading-snug">
+                                Carrots are crunchy, naturally sweet root vegetables rich in beta-carotene and essential
+                                vitamins that promote eye health and boost immunity.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Corn -->
+                    <div class="flex flex-col">
+                        <div class="h-28 overflow-hidden">
+                            <img src="img/corn.png" alt="Corn" class="w-full h-full object-cover" />
+                        </div>
+                        <div class="bg-cardGray p-2.5 flex-1 flex flex-col">
+                            <h3 class="font-bold text-sm text-gray-900 mb-1 leading-tight">Corn</h3>
+                            <p class="text-[11px] text-gray-800 leading-snug">
+                                Sweet corn delivers a juicy bite and rich flavor, packed with dietary fiber,
+                                antioxidants, and carbohydrates that provide sustained daily energy.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Bell Pepper -->
+                    <div class="flex flex-col">
+                        <div class="h-28 overflow-hidden">
+                            <img src="img/pepper.png" alt="Bell Pepper" class="w-full h-full object-cover" />
+                        </div>
+                        <div class="bg-cardGray p-2.5 flex-1 flex flex-col">
+                            <h3 class="font-bold text-sm text-gray-900 mb-1 leading-tight">Bell Pepper</h3>
+                            <p class="text-[11px] text-gray-800 leading-snug">
+                                Colorful bell peppers bring crisp textures and vibrant flavor to meals, loaded with
+                                vitamin C and essential antioxidants for overall wellness.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Right Column: Contact (5 cols) -->
+            <div class="md:col-span-5 flex flex-col gap-3">
+                <!-- Section Header -->
+                <div class="bg-oliveNav text-white font-bold text-xs px-3 py-1.5">
+                    Contact
+                </div>
+
+                <!-- 右側 Contact 欄位（設定 h-full 讓它跟左邊等高） -->
+<div class="flex flex-col h-full w-full">
+    
+
+    <!-- 淺綠色內容框（w-full 填滿寬度、flex-1 填滿剩餘高度） -->
+    <div class="bg-[#f1f6d9] p-5 text-[#727f61] text-[12px] leading-relaxed flex flex-col justify-between flex-1 w-full rounded-b-sm">
+        
+        <!-- 文章段落 -->
+        <div class="space-y-3">
+            <p>
+                Whether you have detailed inquiries, thoughtful feedback, or constructive suggestions regarding Vegetables, the Vegetables Club, or your recent online orders, our dedicated Vegetables Customer Service team is always here to provide you with complete support and guidance. We take immense pride in delivering exceptional care, ensuring that every interaction you have with us is smooth, transparent, and completely tailored to your household needs.
+            </p>
+        </div>
+
+        <!-- 底部分隔線與聯絡資訊（會自動貼在淺綠框最底部） -->
+        <div class="mt-4 pt-3 border-t border-[#8f9b7c]">
+            <p class="mb-1">E-mail : Vegetables@aaabbccc.com</p>
+            <p>PHONE : +886-123-456-789</p>
+        </div>
+
+    </div>
+</div>
+
+        </div>
+        
+
+    </div>
+    <!-- 1. 上方的內容雙欄網格區塊 (Vegetables + Contact) -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-5 mb-6">
+    <!-- 左區塊: Vegetables (占 7 欄) -->
+    <div class="md:col-span-7 flex flex-col justify-between">
+        <!-- 你的 3 張蔬菜卡片 -->
+    </div>
+
+    <!-- 右區塊: Contact (占 5 欄) -->
+    <div class="md:col-span-5 flex flex-col">
+        <!-- 你的 Contact 區塊 -->
+    </div>
+</div> <!-- Grid 區塊在此結束 -->
+
+
+<!-- 2. 下方的 Footer 區塊 (必須放在 Grid 之外，獨立成一列) -->
+<footer class="w-full bg-[#5c6f3d] text-white text-xs py-2 px-4 flex items-center justify-center text-center mt-auto">
+    <div>Copyrights 2017 Vegetables else / Design by Vegetables</div>
+</footer>
+
+</body>
+
+</html>
